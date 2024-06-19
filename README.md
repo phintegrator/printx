@@ -1,6 +1,6 @@
 # printx
 
-printx is a Python package that provides a print-like function for logging messages.
+printx is a Python package that provides a convenient print-like function for logging messages with various log levels, making it easy to integrate logging into your projects.
 
 ## Installation
 
@@ -39,6 +39,40 @@ def example_function():
 
 example_function()
 ```
+
+## Configuration
+
+The `printx_configure` function allows you to configure the logging settings. By default, it logs messages to a file named after the script that uses the `printx` function and to the console.
+
+### To configure logging:
+
+```python
+from printx import printx_configure
+```
+
+### Configure logging with default settings
+
+```python
+printx_configure()
+```
+
+### Configure logging with a custom log filename
+
+```python
+printx_configure(log_filename='custom_log.log')
+```
+
+### Configure logging with a different log level
+
+```python
+printx_configure(level=logging.WARNING)
+```
+
+The `printx_configure` function accepts the following parameters:
+
+- `log_filename` (str, optional): The name of the log file. If not provided, the default is the script's name with a `.log` extension.
+- `level` (int, optional): The logging level. Default is `logging.DEBUG`.
+
 
 ## License
 

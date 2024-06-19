@@ -8,7 +8,7 @@ setup(
     install_requires=[],
     entry_points={},
     author='Javer Valino',
-    description='A Python package to log messages using a print-like function.',
+    description='A Python package that provides a convenient print-like function for logging messages with various log levels, making it easy to integrate logging into your projects.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/phintegrator/printx',
