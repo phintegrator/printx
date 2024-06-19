@@ -1,0 +1,4 @@
+build/
+dist/
+printx_env/
+printx.egg-info/
